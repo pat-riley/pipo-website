@@ -2,54 +2,53 @@ extends _layouts/primary
 
 block content
   
-  nav.navbar.navbar-light
-    .container
-        a.navbar-brand(href='#')
-          img.badge(src="images/pipo-logo.svg")
-        .pull-right
-          ul.nav.navbar-nav
-            li.nav-item.active
-              a.nav-link(href='#') About
-            li.nav-item
-              a.nav-link(href='#') Code
-            li.nav-item
-              a.nav-link(href='#') Login
+    nav.navbar.navbar-light
+      .container
+          a.navbar-brand(href='#')
+            img.badge(src="images/pipo-logo.svg")
+          .pull-right
+            ul.nav.navbar-nav
+              li.nav-item.active
+                a.nav-link(href='#') About
+              li.nav-item
+                a.nav-link(href='https://github.com/phutchins/pipo') Code
+              li.nav-item
+                a.nav-link(href='#') Login
 
 
-  section.bg-white-gradient
-    .container
-      .row.text-center
-        h1 You don't have to slack on your teams security
-        p PGP Client Side encrypted multi party chat made easy
-        button.btn.btn-secondary Try it out
-        img(src="images/table.svg" width="100%")
-    .row.border-top-grey.m-x-5.p-y-lg.m-t-lg.bg-transparent
-      .container.p-x-0
-        .col-xs-4
-          .row
-            .col-lg-4
-              img.badge(src="images/lock.svg")
-            .col-lg-8
-              p.badge-label Say Anything
-              p.badge-title Secure your teams  channels using the best cryptography
-        
-        .col-xs-4
-          .row
-            .col-lg-4
-              img.badge(src="images/chain.svg")
-            .col-lg-8
-              p.badge-label Secure Development
-              p.badge-title Share private keys and sensative business information
-
-        .col-xs-4
-          .row
-            .col-lg-4
-              img.badge(src="images/group.svg")
-            .col-lg-8
-              p.badge-label Security Breaches
-              p.badge-title Leverage the PGP to eliminate man in the middle attacks
+    section.bg-white-gradient
+      .container
+        .row.text-center
+          .col-lg-12
+            h1 You don't have to slack on your teams security
+            p PGP Client Side encrypted multi party chat made easy
+            button.btn.btn-secondary Try it out
+            img(src="images/table.svg" width="100%")
+        .row.border-top-grey.m-x-5.p-y-lg.m-t-lg.bg-transparent
+          .container.p-x-0
+            .col-xs-4
+              .row
+                .col-lg-4
+                  img.badge(src="images/lock.svg")
+                .col-lg-8
+                  p.badge-label Say Anything
+                  p.badge-title Secure your teams  channels using the best cryptography
+            .col-xs-4
+              .row
+                .col-lg-4
+                  img.badge(src="images/chain.svg")
+                .col-lg-8
+                  p.badge-label Secure Development
+                  p.badge-title Share private keys and sensative business information
+            .col-xs-4
+              .row
+                .col-lg-4
+                  img.badge(src="images/group.svg")
+                .col-lg-8
+                  p.badge-label Security Breaches
+                  p.badge-title Leverage the PGP to eliminate man in the middle attacks
     
-    section.bg-green.tennis-border
+    section.bg-green
       .container
         .row
           .col-lg-6
@@ -57,4 +56,42 @@ block content
             p Pipo was built to solve a problem…security. Here we explain how we go about doing that.
           .col-lg-6
             img.badge(src="images/diagram-1.png")
+            
+    section.bg-white-gradient
+      .container
+        .row
+          .col-lg-6
+            img.badge(src="images/diagram-1.png")
+          .col-lg-6
+            p Public Key & Membership
+            ol
+              li Server is created with an admin certificate composed of two admin's public keys and a signed payload.
+              li All membership changes start with one of these two admins and can be verified.
+              li An admin that has been added by an original admin can add a new user which can then be verified by verifying signatures starting with the newly added user, working your way up the chain to one of the original two admins
+
+    section.bg-dark
+      .container
+        .row
+          .col-lg-6
+            p Run Your Own
+            p pipo allows you to run your own server for ultimate privacy and security
+            button.btn.btn-secondary Learn How
+          .col-lg-6
+            img.badge(src="images/diagram-3.png")
+  
+    section.bg-white-gradient
+      .container
+        .row.text-center
+          img(src="images/github-icon.svg")
+          p Open Beta
+          p Sign into the hosted beta to test it our or start contributing to the project on github
+          button.btn.btn-secondary View Code
+          br
+          button.btn.btn-secondary Sign In
+    
+    footer.bg-white
+      .container
+        .row.text-center
+          p pipo is released under the MIT License
+
             

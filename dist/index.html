@@ -60,7 +60,7 @@
             <div class="pull-right">
               <ul class="nav navbar-nav">
                 <li class="nav-item active"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="https://github.com/phutchins/pipo" class="nav-link">Code</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
               </ul>
             </div>
@@ -69,54 +69,100 @@
         <section class="bg-white-gradient">
           <div class="container">
             <div class="row text-center">
-              <h1>You don't have to slack on your teams security</h1>
-              <p>PGP Client Side encrypted multi party chat made easy</p>
-              <button class="btn btn-secondary">Try it out</button><img src="images/table.svg" width="100%">
+              <div class="col-lg-12">
+                <h1>You don't have to slack on your teams security</h1>
+                <p>PGP Client Side encrypted multi party chat made easy</p>
+                <button class="btn btn-secondary">Try it out</button><img src="images/table.svg" width="100%">
+              </div>
+            </div>
+            <div class="row border-top-grey m-x-5 p-y-lg m-t-lg bg-transparent">
+              <div class="container p-x-0">
+                <div class="col-xs-4">
+                  <div class="row">
+                    <div class="col-lg-4"><img src="images/lock.svg" class="badge"></div>
+                    <div class="col-lg-8">
+                      <p class="badge-label">Say Anything</p>
+                      <p class="badge-title">Secure your teams  channels using the best cryptography</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="row">
+                    <div class="col-lg-4"><img src="images/chain.svg" class="badge"></div>
+                    <div class="col-lg-8">
+                      <p class="badge-label">Secure Development</p>
+                      <p class="badge-title">Share private keys and sensative business information</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="row">
+                    <div class="col-lg-4"><img src="images/group.svg" class="badge"></div>
+                    <div class="col-lg-8">
+                      <p class="badge-label">Security Breaches</p>
+                      <p class="badge-title">Leverage the PGP to eliminate man in the middle attacks</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row border-top-grey m-x-5 p-y-lg m-t-lg bg-transparent">
-            <div class="container p-x-0">
-              <div class="col-xs-4">
-                <div class="row">
-                  <div class="col-lg-4"><img src="images/lock.svg" class="badge"></div>
-                  <div class="col-lg-8">
-                    <p class="badge-label">Say Anything</p>
-                    <p class="badge-title">Secure your teams  channels using the best cryptography</p>
-                  </div>
-                </div>
+        </section>
+        <section class="bg-green">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <p>Security & Encryption</p>
+                <p>Pipo was built to solve a problem…security. Here we explain how we go about doing that.</p>
               </div>
-              <div class="col-xs-4">
-                <div class="row">
-                  <div class="col-lg-4"><img src="images/chain.svg" class="badge"></div>
-                  <div class="col-lg-8">
-                    <p class="badge-label">Secure Development</p>
-                    <p class="badge-title">Share private keys and sensative business information</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-4">
-                <div class="row">
-                  <div class="col-lg-4"><img src="images/group.svg" class="badge"></div>
-                  <div class="col-lg-8">
-                    <p class="badge-label">Security Breaches</p>
-                    <p class="badge-title">Leverage the PGP to eliminate man in the middle attacks</p>
-                  </div>
-                </div>
+              <div class="col-lg-6"><img src="images/diagram-1.png" class="badge"></div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white-gradient">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6"><img src="images/diagram-1.png" class="badge"></div>
+              <div class="col-lg-6">
+                <p>Public Key & Membership</p>
+                <ol>
+                  <li>Server is created with an admin certificate composed of two admin's public keys and a signed payload.</li>
+                  <li>All membership changes start with one of these two admins and can be verified.</li>
+                  <li>An admin that has been added by an original admin can add a new user which can then be verified by verifying signatures starting with the newly added user, working your way up the chain to one of the original two admins</li>
+                </ol>
               </div>
             </div>
           </div>
-          <section class="bg-green tennis-border">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6">
-                  <p>Security & Encryption</p>
-                  <p>Pipo was built to solve a problem…security. Here we explain how we go about doing that.</p>
-                </div>
-                <div class="col-lg-6"><img src="images/diagram-1.png" class="badge"></div>
+        </section>
+        <section class="bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <p>Run Your Own</p>
+                <p>pipo allows you to run your own server for ultimate privacy and security</p>
+                <button class="btn btn-secondary">Learn How</button>
               </div>
+              <div class="col-lg-6"><img src="images/diagram-3.png" class="badge"></div>
             </div>
-          </section>
-        </section><a class="exit-off-canvas"></a>
+          </div>
+        </section>
+        <section class="bg-white-gradient">
+          <div class="container">
+            <div class="row text-center"><img src="images/github-icon.svg">
+              <p>Open Beta</p>
+              <p>Sign into the hosted beta to test it our or start contributing to the project on github</p>
+              <button class="btn btn-secondary">View Code</button><br>
+              <button class="btn btn-secondary">Sign In</button>
+            </div>
+          </div>
+        </section>
+        <footer class="bg-white">
+          <div class="container">
+            <div class="row text-center">
+              <p>pipo is released under the MIT License</p>
+            </div>
+          </div>
+        </footer><a class="exit-off-canvas"></a>
       </div>
     </div>
     <script src="/scripts/main.min.js" data-no-instant="data-no-instant"></script>
