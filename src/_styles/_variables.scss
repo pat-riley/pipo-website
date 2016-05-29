@@ -4,13 +4,15 @@
 
 // Colors
 $white:                   #fff;
-$dark:                    #3d424d;
-$darker:                  #292724;
-$border:                  #979797;
+$dark:                    #646766;
+$darker:                  #383B3A;
+$border:                  #E0E0E0;
 $border-light:            #e5e5e5;
+$green:                   #5CB882;
+
 
 $selection-color:         #ebebff;
-$instantclick-bar-color:  $dark;
+$instantclick-bar-color:  $green;
 
 
 
@@ -22,7 +24,7 @@ $grid-breakpoints: (
   xl: 1000px
 );
 
-$grid-columns:               15;
+$grid-columns:               12;
 $container-max-widths: (
   xl: 1024px
 );
