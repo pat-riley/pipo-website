@@ -1,0 +1,30 @@
+.m-t-xl {
+  margin-top: 12em;
+}
+
+.m-b-xl {
+  margin-bottom: 12em;
+}
+
+.m-x-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.text-center-sm {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.opacity-50 {
+  opacity: .5;
+}
+
+.opacity-70 {
+  opacity: .7;
+}
