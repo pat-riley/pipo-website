@@ -19,6 +19,78 @@
   }
 }
 
+//
+
+.ping-pong-table {
+  @include fadeInUp(
+    $delay: 3.5s,
+    $duration: .5s
+  );
+}
+
+// Bages
+.badge-1 {
+    @include zoomIn(
+      $delay: 3.25s,
+      $duration: .5s
+    );
+}
+
+.badge-2 {
+    @include zoomIn(
+      $delay: 4.25s,
+      $duration: .5s
+    );
+}
+
+.badge-3 {
+    @include zoomIn(
+      $delay: 5.25s,
+      $duration: .5s
+    );
+}
+
+.badge-label {
+  @extend .m-b-0;
+  @extend .text-center-sm;
+}
+
+.badge-title {
+  @extend .m-b-0;
+  @extend .text-center-sm;
+  &--1 {
+    @include fadeInLeft(
+      $delay: 3.25s
+    );
+  }
+  &--2 {
+    @include fadeInLeft(
+      $delay: 4.25s
+    );
+  }
+  &--3 {
+    @include fadeInLeft(
+      $delay: 5.25s
+    );
+  }
+}
+
+.badge {
+  width: 100%;
+}
+
+
+.cta-button {
+  @include zoomIn(
+    $delay: 3.25s,
+    $duration: .5s
+  );
+}
+
+
+
+
+
 
 
 // the main logo used on the home page
@@ -49,21 +121,6 @@
   }
 }
 
-// Badges
-
-.badge-label {
-  @extend .m-b-0;
-  @extend .text-center-sm;
-}
-
-.badge-title {
-  @extend .m-b-0;
-  @extend .text-center-sm;
-}
-
-.badge {
-  width: 100%;
-}
 
 
 .footer {

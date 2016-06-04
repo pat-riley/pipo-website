@@ -1,4 +1,17 @@
 .headline {
   font-weight: 200;
-  @include bounceIn();
+  @include fadeIn(
+    $delay: .33s,
+    $duration: 2s
+  );
+}
+
+.sub-header {
+  color: #646766;
+  font-size: 1.5rem;
+  font-weight: 200;
+  @include fadeIn(
+    $delay: 2s,
+    $duration: 2s
+  );
 }
