@@ -8,6 +8,18 @@
 }
 
 
+.navbar {
+  background-color: $white;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 2rem 1rem;
+  .nav-item {
+    &.active {
+      border-bottom: 3px solid $green;
+    }
+  }
+}
+
+
 
 // the main logo used on the home page
 .logo {

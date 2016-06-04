@@ -2,7 +2,7 @@ extends _layouts/primary
 
 block content
   
-    nav.navbar.navbar-light
+    nav.navbar.navbar-light.navbar-fixed-top
       .container
           a.navbar-brand(href='#')
             img.badge(src="images/pipo-logo.svg")
@@ -11,19 +11,20 @@ block content
               li.nav-item.active
                 a.nav-link(href='#') About
               li.nav-item
-                a.nav-link(href='https://github.com/phutchins/pipo') Code
+                a.nav-link(href='#') Code
               li.nav-item
                 a.nav-link(href='#') Login
 
 
-    section.bg-white-gradient
+    section.bg-white-gradient.m-t-nav
       .container
         .row.text-center
           .col-lg-12
-            h1 You don't have to slack on your teams security
-            p PGP Client Side encrypted multi party chat made easy
+            h1.headline.m-y-md You don't have to slack on your teams security
+            p.m-b-md PGP Client Side encrypted multi party chat made easy
             button.btn.btn-secondary Try it out
-            img(src="images/table.svg" width="100%")
+            .m-t-lg
+              img(src="images/table.svg" width="100%")
         .row.border-top-grey.m-x-5.p-y-lg.m-t-lg.bg-transparent
           .container.p-x-0
             .col-xs-4
